@@ -9,3 +9,19 @@ docker ps = exibe os containers em execução
 docker run = roda um container
 	- docker run
 	- docker run -it (terminal integrado)
+	- docker run -d (modo detached, em background)
+	- docker run -p 80:80 (roda na porta 80 da máquina e 80 do container)
+	- docker run --name nome_container (define o nomer do container)
+
+docker stop = para um container
+	- docker stop nome_container (ou pelo id)
+
+docker start = reinicia um container
+	- docker start nome_container (ou pelo id)
+
+docker logs = exibe os logs do container
+	- docker logs nome_container
+	- docker logs -f nome_container (follow - log sempre em exibição)
+docker rm = remove um container
+	- docker rm nome_container
+	- docker rm nome_container -f (force - remove mesmo se estiver rodando)
