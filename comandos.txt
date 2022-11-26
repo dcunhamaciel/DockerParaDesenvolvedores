@@ -1,0 +1,11 @@
+docker version = exibe a versão do docker
+	- docker version
+	- docker version --format (formata a saída, por exemplo em json)
+
+docker ps = exibe os containers em execução
+	- docker ps
+	- docker ps -a (exibe todos os containers que já foram executados)
+
+docker run = roda um container
+	- docker run
+	- docker run -it (terminal integrado)
