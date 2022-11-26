@@ -18,10 +18,26 @@ docker stop = para um container
 
 docker start = reinicia um container
 	- docker start nome_container (ou pelo id)
+	- docker start -i nome_container (terminal integrado)
 
 docker logs = exibe os logs do container
 	- docker logs nome_container
 	- docker logs -f nome_container (follow - log sempre em exibição)
+
 docker rm = remove um container
 	- docker rm nome_container
-	- docker rm nome_container -f (force - remove mesmo se estiver rodando)
+	- docker -f rm nome_container (force - remove mesmo se estiver rodando)
+
+docker rmi = remove uma imagem
+	- docker rmi -f nome_imagem (force - remove mesmo se estiver rodando em algum container)
+
+docker build = faz o build de uma imagem
+	- docker build diretorio
+	- docker build -t nome_imagem:tag_imagem diretorio (build com nome + tag da imagem)
+
+docker pull = faz o download de uma imagem
+	- docker pull nome_imagem
+
+docker tag = nomear uma imagem
+	- docker tag id_imagem nome_imagem
+	- docker tag id_imagem nome_imagem:tag_imagem (nome + tag)
