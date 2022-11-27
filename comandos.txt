@@ -12,6 +12,7 @@ docker run = roda um container
 	- docker run -d (modo detached, em background)
 	- docker run -p 80:80 (roda na porta 80 da máquina e 80 do container)
 	- docker run --name nome_container (define o nomer do container)
+	- docker run --rm (remove o container após o mesmo ser parado)
 
 docker stop = para um container
 	- docker stop nome_container (ou pelo id)
@@ -41,3 +42,18 @@ docker pull = faz o download de uma imagem
 docker tag = nomear uma imagem
 	- docker tag id_imagem nome_imagem
 	- docker tag id_imagem nome_imagem:tag_imagem (nome + tag)
+
+docker system prune = remove imagens, containers e networks não utilizados
+	- docker system prune
+
+docker cp = copia arquivos entre o container e a máquina
+	- docker cp nome_container:diretorio_arquivo diretorio_destino
+
+docker top = exibe os processos em execução do container
+	- docker top nome_container
+
+docker inspect = exibe informações de configuração do container
+	- docker inspect nome_container
+
+docker stats = exibe os containers em execução e estatísticas de recursos utilizados da máquina
+	- docker stats
