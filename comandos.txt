@@ -57,3 +57,16 @@ docker inspect = exibe informações de configuração do container
 
 docker stats = exibe os containers em execução e estatísticas de recursos utilizados da máquina
 	- docker stats
+
+docker login = faz autenticação com o Docker Hub
+	- docker login
+
+docker logout = encerra autenticação com o Docker Hub
+	- docker logout
+
+docker push = envia uma imagem para o Docker Hub
+	- docker push nome_imagem
+	- docker push nome_imagem:tag_imagem (nome + tag)
+
+docker pull = baixa uma imagem do Docker Hub
+	- docker pull nome_imagem
