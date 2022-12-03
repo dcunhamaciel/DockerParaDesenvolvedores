@@ -13,6 +13,7 @@ docker run = roda um container
 	- docker run -p 80:80 (roda na porta 80 da máquina e 80 do container)
 	- docker run --name nome_container (define o nomer do container)
 	- docker run --rm (remove o container após o mesmo ser parado)
+	- docker run -v /data (com diretório anônimo)
 
 docker stop = para um container
 	- docker stop nome_container (ou pelo id)
@@ -20,6 +21,9 @@ docker stop = para um container
 docker start = reinicia um container
 	- docker start nome_container (ou pelo id)
 	- docker start -i nome_container (terminal integrado)
+
+docker volume ls = exibe os volumes criados
+	- docker volume ls
 
 docker logs = exibe os logs do container
 	- docker logs nome_container
