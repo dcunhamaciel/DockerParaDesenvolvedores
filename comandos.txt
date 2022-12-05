@@ -14,6 +14,8 @@ docker run = roda um container
 	- docker run --name nome_container (define o nomer do container)
 	- docker run --rm (remove o container após o mesmo ser parado)
 	- docker run -v /data (com diretório anônimo)
+	- docker run -v nome_volume:work_dir_nome (com diretório nomeado)
+	- docker run -v nome_volume:work_dir_nome:ro (volume somente leitura)
 
 docker stop = para um container
 	- docker stop nome_container (ou pelo id)
@@ -74,3 +76,18 @@ docker push = envia uma imagem para o Docker Hub
 
 docker pull = baixa uma imagem do Docker Hub
 	- docker pull nome_imagem
+
+docker volume create = cria um volume
+	- docker volume create nome_volume
+
+docker volume ls = exibe os volumes criados
+	- docker volume ls
+
+docker volume inspect = exibe informações do volume
+	- docker volume inspect nome_volume
+
+docker volume rm = remove um volume
+	- docker volume rm nome_volume
+
+docker volume prune = remove todos os volumes que não estão sendo utilizados
+	- docker volume prune
